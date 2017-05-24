@@ -12,10 +12,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'taglist.vim'
 Plugin 'molokai'
 Plugin 'c.vim'
-Plugin 'python.vim'
+Plugin 'ctags.vim'
 Plugin 'SrcExpl'
-Plugin 'UltiSnips'
 Plugin 'Valloric/YouCompleteMe'
+"for Python
+Plugin 'python.vim'
+Plugin 'UltiSnips'
 Plugin 'davidhalter/jedi'
 
 " All of your Plugins must be added before the following line
@@ -108,7 +110,7 @@ nmap <C-]>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-]>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-]>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 
-let g:tag_root_path="/home/bwu/taghome/"
+let g:tag_root_path="/home/binwu/taghome/"
 let g:tag_dir=""
 
 function! AutoLoadCTagsAndCScope()
