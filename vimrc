@@ -19,6 +19,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'python.vim'
 Plugin 'UltiSnips'
 Plugin 'davidhalter/jedi'
+Plugin 'msanders/snipmate.vim'
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,6 +35,9 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cp
 syntax enable
 syntax on
 "filetype plugin on
+
+"ste backspace key
+set backspace=indent,eol,start
 
 "set foldmethod=indent
 set incsearch
