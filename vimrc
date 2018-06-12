@@ -19,6 +19,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'python.vim'
 Plugin 'UltiSnips'
 Plugin 'davidhalter/jedi'
+"Plugin 'msanders/snipmate.vim'
+"Plugin 'vim-syntastic/syntastic'
 "Code style
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
@@ -104,12 +106,22 @@ let Tlist_Close_On_Select=0
 "let Tlist_Process_File_Always=1
 let Tlist_WinHeight=100
 "let Tlist_WinWidth=40
-let Tlist_WinWidth=28
+let Tlist_WinWidth=30
 let Tlist_Auto_Update=1
 "let Tlist_Use_Horiz_Window=0
 "let Tlist_Exit_OnlyWindow=1
 nmap <F4> :Tlist<CR>
 
+"For NERD Tree
+let NERDChristmasTree=1
+let NERDTreeAutoCenter=1
+let NERDTreeMouseMode=2
+let NERDTreeShowBookmarks=1
+let NERDTreeShowFiles=1
+let NERDTreeShowHidden=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeWinPos='left'
+let NERDTreeWinSize=28
 nmap <F3> :NERDTreeMirror<CR>
 nmap <F3> :NERDTreeToggle<CR>
 
