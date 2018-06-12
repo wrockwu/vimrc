@@ -19,8 +19,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'python.vim'
 Plugin 'UltiSnips'
 Plugin 'davidhalter/jedi'
-Plugin 'msanders/snipmate.vim'
-Plugin 'vim-syntastic/syntastic'
 "Code style
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
