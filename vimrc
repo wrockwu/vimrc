@@ -19,6 +19,13 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'python.vim'
 Plugin 'UltiSnips'
 Plugin 'davidhalter/jedi'
+"Code style
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -27,7 +34,8 @@ filetype plugin indent on    " required
 "YouCompleteMe Configure
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 "let g:ycm_collect_identifiers_from_tag_files = 1
-
+let g:SimpylFold_docstring_preview=1
+let python_highlight_all=1
 
 "Below is Vim configure
 syntax enable
@@ -35,6 +43,7 @@ syntax on
 "filetype plugin on
 
 "set foldmethod=indent
+"set foldlevel=99
 set incsearch
 set ruler
 set number
@@ -45,20 +54,23 @@ set clipboard=unnamed
 "set mouse=v
 set t_Co=256
 colorscheme molokai 
-"ji cheng qian hang suo jin
-set autoindent
-"set for C suo jin
-set smartindent
-set cindent
+
 "set Tab equal 4
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set textwidth=79
 "set noexpandtab
 set expandtab
+set autoindent
+
+set fileformat=unix
+
+set encoding=utf-8
+
 "set nowrap
-set wrap
-set smarttab
+"set wrap
+"set smarttab
 "set match
 set showmatch
 set matchtime=5
@@ -89,17 +101,22 @@ let Tlist_Close_On_Select=0
 "let Tlist_Process_File_Always=1
 let Tlist_WinHeight=100
 "let Tlist_WinWidth=40
-let Tlist_WinWidth=40
+let Tlist_WinWidth=28
 let Tlist_Auto_Update=1
-"let Tlist_WinWidth=28
 "let Tlist_Use_Horiz_Window=0
 "let Tlist_Exit_OnlyWindow=1
-nmap <F1> :Tlist<CR>
+nmap <F4> :Tlist<CR>
+
+nmap <F3> :NERDTreeMirror<CR>
+nmap <F3> :NERDTreeToggle<CR>
 
 "set winmanager
 "let g:winManagerWindowLayout='FileExplorer|TagList'
 "nmap wm :WMToggle<cr>
 "let g:winManagerWidth=40
+
+" Enable folding with the spacebar
+nnoremap <space> za
 
 "set cscope
 nmap <C-]>s :cs find s <C-R>=expand("<cword>")<CR><CR>
