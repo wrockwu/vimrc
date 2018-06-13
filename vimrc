@@ -22,7 +22,7 @@ Plugin 'davidhalter/jedi'
 "Plugin 'msanders/snipmate.vim'
 "Plugin 'vim-syntastic/syntastic'
 "Code style
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
@@ -36,7 +36,7 @@ filetype plugin indent on    " required
 "YouCompleteMe Configure
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 "let g:ycm_collect_identifiers_from_tag_files = 1
-let g:SimpylFold_docstring_preview=1
+"let g:SimpylFold_docstring_preview=1
 let python_highlight_all=1
 
 "Below is Vim configure
@@ -91,16 +91,16 @@ highlight StatusLine cterm=bold ctermfg=yellow ctermbg=blue
 "let Tlist_Ctags_Cmd='/home/bwu/bin/bin/ctags'
 let Tlist_Show_One_File=0
 let Tlist_Sort_Type="name"
-let Tlist_Use_Right_Window=0
+let Tlist_Use_Right_Window=1
 "let Tlist_Compart_Format=1
 let Tlist_Exist_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Enable_Fold_Column=1
-let Tlist_Show_Menu=1
-let Tlist_MaxSubMenu_Items=50
-let Tlist_Max_Tag_Length=20
-let Tlist_Use_SingleClick=1
-let Tlist_Auto_Open=0
+"let Tlist_Show_Menu=1
+"let Tlist_MaxSubMenu_Items=50
+"let Tlist_Max_Tag_Length=20
+"let Tlist_Use_SingleClick=1
+let Tlist_Auto_Open=1
 let Tlist_Close_On_Select=0
 "let Tlist_GainFocus_On_ToggleOpen=0
 "let Tlist_Process_File_Always=1
