@@ -109,7 +109,7 @@ let Tlist_WinHeight=100
 let Tlist_WinWidth=30
 let Tlist_Auto_Update=1
 "let Tlist_Use_Horiz_Window=0
-"let Tlist_Exit_OnlyWindow=1
+let Tlist_Exit_OnlyWindow=1
 nmap <F4> :Tlist<CR>
 
 "For NERD Tree
